@@ -33,7 +33,6 @@ sort: by_weight
 use_preset_vocabulary: false
 ...
 ##	a/ah
-konn    abc
 啊	a0
 啊	ah0
 矣	ah0
@@ -43,6 +42,10 @@ konn    abc
 腌	a1
 仔	a2	10
 啞	a2
+konn	abc
+konna	a-bc
+konn-k	abc5
+konn-k2	a2-c5
 鴨	ah4
 押	ah4
 壓	ah4	1%
