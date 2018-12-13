@@ -54,10 +54,10 @@ menu:
   alternative_select_keys: "ABCDEFGHIJ"
 
 speller:
-  alphabet: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347'
-  initials: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/-'
+  alphabet: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347S'
+  initials: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/-S'
   finals: " 6347"
-  delimiter: "'"
+  delimiter: " -"
   use_space: true
   algebra:
     - abbrev/^([bpmfdtnlgkhjqxZCSrzcs]).+$/$1/
