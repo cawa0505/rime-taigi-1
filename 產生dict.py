@@ -38,7 +38,6 @@ def 提教典表():
         return kauTian
 
 
-
 dict_header = '''# Rime dictionary
 # encoding: utf-8
 
@@ -65,7 +64,7 @@ with open('taigi.dict.yaml', 'w', encoding='utf-8') as f:
                 tiauArr = '1', '2', '3', '5', '6', '7', '9'
             for tiau in tiauArr:
                 pio.add('{}{}{}'.format(siannBo, unBo, tiau))
-    # 印傳統調號的羅馬字
+    # 印傳統調號的羅馬字音節表
     for im in sorted(pio):
         tiauIm = 臺灣閩南語羅馬字拼音(im).轉調符()
         if tiauIm is not None:
@@ -75,5 +74,6 @@ with open('taigi.dict.yaml', 'w', encoding='utf-8') as f:
             print('{}\t{}\t10%'.format(頭字轉大寫(tiauIm), 頭字轉大寫(im)), file=f)
     # 印教典詞
     教典 = 提教典表()
-    for ji, im in sorted(教典, key=lambda tup: tup[1]):
-        print('{}\t{}'.format(ji, im), file=f)
+    for ji, im in sorted(教典, key=lambda tup: (tup[1],tup[0])):
+        khangPehLianIm = im.replace('-', ' ')
+        print('{}\t{}'.format(ji, khangPehLianIm), file=f)
