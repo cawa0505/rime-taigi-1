@@ -51,19 +51,18 @@ engine:
     - uniquifier
 
 menu:
-  alternative_select_keys: "ABCDEFGHIJ"
+  alternative_select_keys: "zxcvdfqw"
 
 speller:
-  alphabet: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347S'
-  initials: '1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/-S'
-  finals: " 6347"
+  alphabet: 'abeghijklmnopstu,./- 123456789ABEGHIJKLMNOPSTU'
+  initials: 'abeghijklmnopstu,./-ABEGHIJKLMNOPSTU'
+  finals: " 123456789"
   delimiter: " -"
   use_space: true
   algebra:
-    - abbrev/^([bpmfdtnlgkhjqxZCSrzcs]).+$/$1/
+    - abbrev/^([abeghijklmnopstu]).+$/$1/
     - derive/^([A-Za-z]+)\d$/$1/
-    - abbrev/^([bpmfdtnlgkhjqxZCSrzcs]).+(\d)$/$1$2/
-#    - 'xlit|bpmfdtnlgkhjqxZCSrzcsiuvaoeEAIOUMNKGR12345|1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347|'
+    - abbrev/^([abeghijklmnopstu]).+(\d)$/$1$2/
 
 translator:
   dictionary: taigi
