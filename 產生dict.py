@@ -40,6 +40,6 @@ with open('taigi.dict.yaml', 'w', encoding='utf-8') as f:
         tiauIm = 臺灣閩南語羅馬字拼音(im).轉調符()
         if tiauIm is not None:
             # 一般
-            print('{}    {}'.format(tiauIm, im), file=f)
+            print('{}\t{}\t10%'.format(tiauIm, im), file=f)
             # 大寫
-            print('{}    {}'.format(頭字轉大寫(tiauIm), 頭字轉大寫(im)), file=f)
+            print('{}\t{}\t10%'.format(頭字轉大寫(tiauIm), 頭字轉大寫(im)), file=f)
