@@ -1,6 +1,8 @@
+Maintainer: Tshua Bun-li <a8568730@gmail.com>
+Homepage: https://github.com/i3thuan5/rime-taigi
+Description: Taiwanese Input Method Schema for Rime.
 Package: rime-itaigi
 Version: 0.1
 Architecture: all
-Description: Taiwanese Input Method Schema for Rime.
-Maintainer: Tshua Bun-li <a8568730@gmail.com>
+Depends: fcitx-rime (>= 0.3.1)
 
