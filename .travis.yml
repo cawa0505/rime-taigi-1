@@ -8,6 +8,8 @@ branches:
 script:
 - bash build_deb.sh
 - ls
+before_deploy:
+- ls
 deploy:
   provider: pages
   skip_cleanup: true
