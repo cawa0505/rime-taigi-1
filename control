@@ -1,0 +1,11 @@
+Package: rime-itaigi
+Source: rime-itaigi
+Section: utils
+Priority: optional
+Version: 0.1
+Architecture: all
+Depends: fcitx-rime (>= 0.3.1)
+Maintainer: Tshua Bun-li <a8568730@gmail.com>
+Homepage: https://github.com/i3thuan5/rime-taigi
+Description: Taiwanese Input Method Schema for Rime.
+

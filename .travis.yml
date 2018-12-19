@@ -1,0 +1,20 @@
+sudo: false
+dist: trusty
+language: python
+python:
+- '3.5'
+branches:
+  only:
+  - master
+  - "/^\\d+\\.\\d+\\.\\d+$/"
+script:
+- bash build_deb.sh
+- ls
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token:
+    secure: r+B8+QUD3Hjq0PI7scpYKP+KUlY5A65ylRw+GR2fEFsH1V5itHulX2c2DWw3z1DkjKpRT1Ftr5uDQ7uhiO6dviLhfSM5iSeK4IgH0x8JVEoVGCWqtRsx3BEPCqO7TnJ7gWBKdsPI+T/Z/6cc4AX/febdk7723tkIc97+ZSciVQEDEuJEXemQdoBYARY617kbKcrc23xgU5oK7eTvdHCk3bY68WxJ4+RTN63T9f6utVvheb8+a2YYQCzclaLHe1nGZzmh9TM/J9zNZ1G197x1UOLPQMx6ovdINRJbQ0kMQ39SV2DvoJEajaf3kvo4CsPtPI9IQQsL8MwFzCymhm/58/n8H3l5nKnxym6s69bO4GnYq5oqeXle/Mk5QobxZcmphii+bkeAqHZN+F5cg/8U+xcUJDih6LbbwnNJHk1ul+lCnzfZCU1dY+y5C0WFWTgRmBeZvNlKK6R4uYlA9y0GhMwGETskkD6poHmTjrmv3CxHfrER+VM4mnnbaL1ZB9kgADyXw4h17PAJ2/RhqLSs6uO7RMrQksAj19NYRCMZbngVJU/mnbl9/wrl6Fyfy0ESdznVTBczfb8n41JKz4oSehZOuE5kIKGf7BjkOmEpGIN5Rhza+rCJSBh+EaKmN6QozLF9oRNMmVIo8zjSeD3EDRFXxowaokTGP3SSpkQGnbE=
+  local_dir: "."
+  on:
+    branch: master

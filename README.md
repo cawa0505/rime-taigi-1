@@ -1,5 +1,6 @@
 # rime-taigi
 Rime台語輸入法表 (Taiwanese Input Schema for Rime)
+[![Build Status](https://travis-ci.org/i3thuan5/rime-taigi.svg?branch=master)](https://travis-ci.org/i3thuan5/rime-taigi)
 
 # 事前準備
 Linux Mint, Ubuntu:
