@@ -13,5 +13,5 @@ cp ./LICENSE deb/DEBIAN/copyright
 # Build pkg
 rm -rf build/
 mkdir build/
-dpkg -b deb/ build/rime-itaigi.deb
+dpkg -b deb/ build/rime-taigi.deb
 
