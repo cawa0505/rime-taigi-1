@@ -1,0 +1,20 @@
+sudo: false
+dist: trusty
+language: python
+python:
+- '3.5'
+branches:
+  only:
+  - master
+  - "/^\\d+\\.\\d+\\.\\d+$/"
+script:
+- bash build_deb.sh
+- ls
+deploy:
+- provider: pages
+  skip_cleanup: true
+  github_token:
+    secure:
+  local_dir: "."
+  on:
+    branch: master
