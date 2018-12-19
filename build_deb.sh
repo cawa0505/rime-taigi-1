@@ -6,8 +6,11 @@ rm -rf deb/
 # Create pkg
 mkdir -p deb/DEBIAN/
 mkdir -p deb/usr/share/rime-data/
-cp ./control deb/DEBIAN/
+# deb package related file
+cp ./control ./postinst ./postrm deb/DEBIAN/
+# taigi
 cp ./taigi.schema.yaml ./taigi.dict.yaml deb/usr/share/rime-data/
+# copyright
 cp ./LICENSE deb/DEBIAN/copyright
 
 # Build pkg
