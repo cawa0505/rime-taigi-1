@@ -11,4 +11,7 @@ cp ./taigi.schema.yaml ./taigi.dict.yaml deb/usr/share/rime-data/
 cp ./LICENSE deb/DEBIAN/copyright
 
 # Build pkg
-dpkg -b deb/ rime-itaigi.deb
+rm -rf build/
+mkdir build/
+dpkg -b deb/ build/rime-itaigi.deb
+
